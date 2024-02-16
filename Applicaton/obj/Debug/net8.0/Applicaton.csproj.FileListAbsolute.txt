@@ -1,0 +1,15 @@
+D:\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.deps.json
+D:\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.dll
+D:\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.pdb
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.GeneratedMSBuildEditorConfig.editorconfig
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.AssemblyInfoInputs.cache
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.AssemblyInfo.cs
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.CoreCompileInputs.cache
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.dll
+D:\TodoMS\Applicaton\obj\Debug\net8.0\refint\Applicaton.dll
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.pdb
+D:\TodoMS\Applicaton\obj\Debug\net8.0\ref\Applicaton.dll
+D:\TodoMS\Applicaton\bin\Debug\net8.0\Domain.dll
+D:\TodoMS\Applicaton\bin\Debug\net8.0\Domain.pdb
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.AssemblyReference.cache
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.CopyComplete

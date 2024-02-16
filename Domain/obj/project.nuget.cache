@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "q/6VJX06AgiuKwrHe1T1xioTdEF51A0RjrkTI4xf/0wnxVE64SIIselVKps2S8R97TjhLtAx28Gjta3QtHbLXA==",
+  "success": true,
+  "projectFilePath": "D:\\TodoMS\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.grapecity.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
