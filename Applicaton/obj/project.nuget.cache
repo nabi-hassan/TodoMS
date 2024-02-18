@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "imJ0ngczSELcqfRXVHhyrFnnNJIKT6Drl7+gBaDGK5bOioDp0NjrK4TuQB5fgT+Ru35X24wCUZkMeQt9NxJqFA==",
+  "dgSpecHash": "ofxH5vQhA8lJehiZccq6ztIfMbE7XLNF3Wyv61jNGvT34HVVUL91drX4L7B1A28l9tBihVnURzMpe6+aiDZ/Bw==",
   "success": true,
-  "projectFilePath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.grapecity.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  "projectFilePath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\syedn\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\syedn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\syedn\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\syedn\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\syedn\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }
