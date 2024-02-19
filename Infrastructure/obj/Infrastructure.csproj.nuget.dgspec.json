@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj": {
+    "D:\\TodoMS\\Applicaton\\Applicaton.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj",
+        "projectUniqueName": "D:\\TodoMS\\Applicaton\\Applicaton.csproj",
         "projectName": "Applicaton",
-        "projectPath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj",
-        "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\TodoMS\\Applicaton\\obj\\",
+        "projectPath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj",
+        "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+        "outputPath": "D:\\TodoMS\\Applicaton\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Github\\TodoMS\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Github\\TodoMS\\Domain\\Domain.csproj"
+              "D:\\TodoMS\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\TodoMS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -38,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,21 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Github\\TodoMS\\Domain\\Domain.csproj": {
+    "D:\\TodoMS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\TodoMS\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\TodoMS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Github\\TodoMS\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\TodoMS\\Domain\\obj\\",
+        "projectPath": "D:\\TodoMS\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+        "outputPath": "D:\\TodoMS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +94,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
@@ -99,6 +108,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -120,21 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\TodoMS\\Infrastructure\\obj\\",
+        "projectPath": "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+        "outputPath": "D:\\TodoMS\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,14 +156,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj": {
-                "projectPath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj"
+              "D:\\TodoMS\\Applicaton\\Applicaton.csproj": {
+                "projectPath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj"
               }
             }
           }
@@ -158,6 +174,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -193,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

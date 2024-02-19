@@ -11,10 +11,10 @@ namespace Applicaton.Interfaces
         Task<List<TVm>> Get();
         Task<TDto> Get(int id);
         Task<TDto> Create(TDto dto);
-        Task<TDto> Uodate(TDto dto);
+        Task<TDto> Update(TDto dto);
         Task<int> Delete(int id);
-        Task<List<TDto>> CreateRange(List<TDto> dto);
-        Task<List<TDto>> UodateRange(List<TDto> dto);
-        Task<int> DeleteRange(List<TDto> id);
+        Task<List<TDto>> CreateRange(List<TDto> dtos);
+        Task<List<TDto>> UpdateRange(List<TDto> dtos);
+        Task<int> DeleteRange(List<TDto> dtos);
     }
 }

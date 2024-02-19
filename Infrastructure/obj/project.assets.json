@@ -2924,19 +2924,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\syedn\\.nuget\\packages\\": {}
+    "C:\\Users\\hassanab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\TodoMS\\Infrastructure\\obj\\",
+      "projectPath": "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+      "outputPath": "D:\\TodoMS\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2944,14 +2944,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "http://nuget.grapecity.com/nuget": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj": {
-              "projectPath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj"
+            "D:\\TodoMS\\Applicaton\\Applicaton.csproj": {
+              "projectPath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj"
             }
           }
         }
@@ -2960,6 +2962,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2995,8 +3002,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.grapecity.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }
