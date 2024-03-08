@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "WebApi.Controllers.TodoGroupsController",
+    "Method": "CreateRange",
+    "RelativePath": "api/TodoGroups/CreateRange",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelDto",
+        "Type": "System.Collections.Generic.List\u00601[[Applicaton.Dtos.TodoGroupDTO, Applicaton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.TodoGroupsController",
     "Method": "Delete",
     "RelativePath": "api/TodoGroups/Delete/{id}",
     "HttpMethod": "DELETE",
@@ -29,40 +45,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebApi.Controllers.TodoGroupsController",
-    "Method": "Edit",
-    "RelativePath": "api/TodoGroups/Edit/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApi.Controllers.TodoGroupsController",
@@ -109,5 +92,26 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "WebApi.Controllers.TodoGroupsController",
+    "Method": "Update",
+    "RelativePath": "api/TodoGroups/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "modelDto",
+        "Type": "Applicaton.Dtos.TodoGroupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
