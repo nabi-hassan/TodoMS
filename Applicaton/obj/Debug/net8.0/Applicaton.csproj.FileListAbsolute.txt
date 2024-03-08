@@ -12,7 +12,6 @@ D:\TodoMS\Applicaton\obj\Debug\net8.0\ref\Applicaton.dll
 D:\TodoMS\Applicaton\bin\Debug\net8.0\Domain.dll
 D:\TodoMS\Applicaton\bin\Debug\net8.0\Domain.pdb
 D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.AssemblyReference.cache
-D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.CopyComplete
 D:\Github\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.deps.json
 D:\Github\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.dll
 D:\Github\TodoMS\Applicaton\bin\Debug\net8.0\Applicaton.pdb
@@ -29,3 +28,4 @@ D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.dll
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\refint\Applicaton.dll
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.pdb
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\ref\Applicaton.dll
+D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.Up2Date

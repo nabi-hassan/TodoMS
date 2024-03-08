@@ -9,7 +9,7 @@ namespace Applicaton.ViewModels
     public class TodoGroupVM
     {
         public int Id { get; set; }
-        public string GorupName { get; set; }
+        public string GroupName { get; set; }
         public DateTime CreatedOn { get; set; }
     }
 }

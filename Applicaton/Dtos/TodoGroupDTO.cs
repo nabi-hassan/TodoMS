@@ -10,7 +10,7 @@ namespace Applicaton.Dtos
         [Display(Name = "Group Name")]
         [Required(ErrorMessage = "{0} is required.")]
         [StringLength(128, ErrorMessage = "{0} can not be more than {1} characters")]
-        public string GorupName { get; set; }
+        public string GroupName { get; set; }
 
         [Display(Name = "Created On")]
         [Column(TypeName = "Date Time")]

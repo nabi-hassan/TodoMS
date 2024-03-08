@@ -23,7 +23,6 @@ D:\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.We
 D:\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApi.props
 D:\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 D:\TodoMS\WebApi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
-D:\TodoMS\WebApi\obj\Debug\net8.0\WebApi.csproj.CopyComplete
 D:\TodoMS\WebApi\obj\Debug\net8.0\WebApi.dll
 D:\TodoMS\WebApi\obj\Debug\net8.0\refint\WebApi.dll
 D:\TodoMS\WebApi\obj\Debug\net8.0\WebApi.pdb
@@ -154,3 +153,6 @@ D:\Github\TodoMS\WebApi\obj\Debug\net8.0\refint\WebApi.dll
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.pdb
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\AutoMapper.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\TodoMS\WebApi\obj\Debug\net8.0\WebApi.csproj.Up2Date
