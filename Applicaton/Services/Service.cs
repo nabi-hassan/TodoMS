@@ -32,7 +32,7 @@ namespace Applicaton.Services
 
         public async Task<TDto> Get(int id)
         {
-            var model = await _repository.Get();
+            var model = await _repository.Get(id);
             if (model == null) return default;
             var dto = _mapper.Map<TDto>(model);
             return dto;

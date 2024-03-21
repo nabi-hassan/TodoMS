@@ -6,13 +6,26 @@ using Domain.Interfaces;
 using Infrastructure.Context;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Text.Json.Serialization;
+using WebApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Create Logger from settings from appsettings.json
+var logger = new LoggerConfiguration()
+.ReadFrom.Configuration(builder.Configuration)
+.CreateLogger();
+//Add Logger
+Log.Logger = logger;
+builder.Host.UseSerilog(logger);
+
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("DefaultConnection not found in configuration");
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<AppDbContext>(options => options
+.UseLazyLoadingProxies(true)
+.UseSqlServer(connectionString));
 
 // Adding Services with dependency injection (likely separate files for each service)
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -42,6 +55,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+//Use Serilog
+app.UseSerilogRequestLogging();
 
 app.UseAuthorization();
 

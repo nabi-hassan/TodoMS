@@ -24,7 +24,7 @@ namespace Applicaton.Helpers
         {
             return new ApiResponse(null, (int)HttpStatusCode.NotFound, "Not Found", message, description);
         }
-        public static ApiResponse InternalServerError(object data, string message, string description)
+        public static ApiResponse GenerateInternalServerError(object data, string message, string description)
         {
             return new ApiResponse(data, (int)HttpStatusCode.InternalServerError, "Internal Server Error", message, description);
         }

@@ -23,16 +23,26 @@ namespace WebApi.Controllers
 
         // GET: api/TodoGroups/Get
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            var modelVms = await _dataService.TodoGroupsService.Get();
+            if (modelVms == null || modelVms.Count <= 0) {
+                return NotFound(ApiResponseBuilder.GenerateNotFound("Get Failed", "Record(s) not found"));
+            }
+            return Ok(ApiResponseBuilder.GenerateOK(modelVms, "OK", $"{modelVms.Count} Record(s) Found"));
         }
 
         // GET api/TodoGroups/Get/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return "value";
+            throw new Exception("Test Exception", new Exception("Test Inner exception"));
+            if (id <= 0)
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Get Failed", "Input not valid"));
+            var modelDto = await _dataService.TodoGroupsService.Get(id);
+            if (modelDto == null)
+                return NotFound(ApiResponseBuilder.GenerateNotFound("Get Failed", $"Record with id {id} not found"));
+            return Ok(ApiResponseBuilder.GenerateOK(modelDto, "OK", $"Record with id: {modelDto.Id} fetched"));
         }
 
         // POST api/TodoGroups/Create
@@ -133,7 +143,64 @@ namespace WebApi.Controllers
             {
                 return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Create Failed", "Some Error Occured"));
             }
-            return Ok(ApiResponseBuilder.GenerateOK(createdDto, "Ok", "Bulk creat sucess"));
+            return Ok(ApiResponseBuilder.GenerateOK(createdDto, "Ok", "Bulk Create sucess"));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateRange([FromBody] List<TodoGroupDTO> modelDto)
+        {
+            if (modelDto == null || modelDto.Count <= 0)
+            {
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Update Failed", "Input is null"));
+            }
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.GetModelStateErrors();
+                if (errors != null && errors.Count > 0)
+                {
+                    var msgBuilder = new StringBuilder();
+                    foreach (var error in errors)
+                    {
+                        msgBuilder.AppendLine(error.ToString());
+                    }
+                    return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Update Failed", msgBuilder.ToString()));
+                }
+            }
+            var updatedDto = await _dataService.TodoGroupsService.UpdateRange(modelDto);
+            if (updatedDto == null || updatedDto.Count <= 0)
+            {
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Update Failed", "Some Error Occured"));
+            }
+            return Ok(ApiResponseBuilder.GenerateOK(updatedDto, "Ok", "Bulk Update sucess"));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteRange([FromBody] List<TodoGroupDTO> modelDto)
+        {
+            if (modelDto == null || modelDto.Count <= 0)
+            {
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Delete Failed", "Input is null"));
+            }
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.GetModelStateErrors();
+                if (errors != null && errors.Count > 0)
+                {
+                    var msgBuilder = new StringBuilder();
+                    foreach (var error in errors)
+                    {
+                        msgBuilder.AppendLine(error.ToString());
+                    }
+                    return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Delete Failed", msgBuilder.ToString()));
+                }
+            }
+            var rowsAffected = await _dataService.TodoGroupsService.DeleteRange(modelDto);
+            if (rowsAffected  <= 0)
+            {
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Bulk Delete Failed", "Some Error Occured"));
+            }
+            return Ok(ApiResponseBuilder.GenerateOK(rowsAffected, "Ok", "Bulk Delete sucess"));
+        }
+
     }
 }

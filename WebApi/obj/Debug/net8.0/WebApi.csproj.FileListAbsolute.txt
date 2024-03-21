@@ -156,3 +156,15 @@ D:\Github\TodoMS\WebApi\obj\Debug\net8.0\ref\WebApi.dll
 D:\TodoMS\WebApi\bin\Debug\net8.0\AutoMapper.dll
 D:\TodoMS\WebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\TodoMS\WebApi\obj\Debug\net8.0\WebApi.csproj.Up2Date
+D:\TodoMS\WebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.MSSqlServer.dll
+D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
