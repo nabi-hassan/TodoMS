@@ -14,27 +14,23 @@ namespace Applicaton.Dtos
         public string TodoItem { get; set; }
 
         [Display(Name = "Created On")]
-        [Column(TypeName = "Date Time")]
+        [Column(TypeName = "datetime")]
         public DateTime CreatedOn { get; set; }
 
         [Display(Name = "Due Date")]
-        [Column(TypeName = "Date Time")]
+        [Column(TypeName = "datetime")]
         public DateTime? DueDate { get; set; }
 
         [Display(Name = "Reminder Date")]
-        [Column(TypeName = "Date Time")]
-        public DateTime ReminderDate { get; set; }
+        [Column(TypeName = "datetime")]
+        public DateTime? ReminderDate { get; set; }
 
 
         [StringLength(32, ErrorMessage = "{0} can not be more than {1} characters")]
         public string Repeat { get; set; }
 
-        [Display(Name = "Important")]
-        [Required(ErrorMessage = "{0} is required.")]
-        public bool? Important { get; set; }
+        public bool Important { get; set; }
 
-        [Display(Name = "Important")]
-        [Required(ErrorMessage = "{0} is required.")]
-        public bool? Completed { get; set; }
+        public bool Completed { get; set; }
     }
 }

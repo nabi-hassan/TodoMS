@@ -20,9 +20,9 @@ namespace Applicaton.Services
         {
             if (dto == null) return null;
             var model = _mapper.Map<Todo>(dto);
-            var matchingModel = await _unitOfWork.TodosRepository.GetDuplicate(model);
-            if (matchingModel == null) return null;
-            var vm = _mapper.Map<TodoVM>(matchingModel);
+            var existingModel = await _unitOfWork.TodosRepository.GetDuplicate(model);
+            if (existingModel == null) return null;
+            var vm = _mapper.Map<TodoVM>(existingModel);
             return vm;
         }
     }

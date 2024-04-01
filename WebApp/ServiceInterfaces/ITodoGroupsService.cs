@@ -1,14 +1,10 @@
 ﻿using Applicaton.Dtos;
-using Applicaton.Helpers;
+using WebApp.ServiceInterfaces;
 
 namespace WebApp.ServiceInterfaces
 {
-    public interface ITodoGroupsService
+    public interface ITodoGroupsService : IGenericService<TodoGroupDTO>
     {
-        Task<ApiResponse> Get();
-        /*Task<ApiResponse> Get(int id);
-        Task<ApiResponse> Create(TodoGroupDTO modelDto);
-        Task<ApiResponse> Edit(int id, TodoGroupDTO modelDto);
-        Task<ApiResponse> Delete(int id);*/
+
     }
 }

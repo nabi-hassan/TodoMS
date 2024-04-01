@@ -1,0 +1,146 @@
+﻿@page
+@model TodosModel
+@{
+    ViewData["Title"] = "Todos";
+}
+
+<section class="content pt-3 pb-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- TO DO List -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="ion ion-clipboard mr-1"></i>
+                            Todos
+                        </h3>
+
+                        <!-- /.card-body -->
+                        <div class="card-tools w-50">
+                            <div class="input- input--sm">
+                                <input type="text" class="form-control form-control-navbar" placeholder="Enter  Name" />
+                                <div class="input--append">
+                                    <button type="button" class="btn btn-primary float-right p" onclick="Add(this)"><i class="fas fa-plus"></i> Add item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <ul class="todo-list" data-widget="todo-list">
+                            @if(Model.modelVMs?.Count > 0)
+                            {
+
+                                @foreach (var item in Model.modelVMs)
+                                {
+                                    <li>
+
+                                        <!-- checkbox -->
+                                        <div class="icheck-primary d-inline ml-2">
+                                            <input type="checkbox" id="@($"todoCheck{Model.modelVMs.IndexOf(item)+1}")">
+                                            <label for="@($"todoCheck{Model.modelVMs.IndexOf(item)+1}")"></label>
+                                        </div>
+                                        <!-- todo text -->
+                                        <span id="@($"spnName-{item.Id}")" class="text">@item.TodoItem</span>
+                                        <!-- Emphasis label -->
+                                        @if(item.Important == true)
+                                        {
+                                            <small class="badge badge-success"><i class="far fa-clock"></i>Important</small>
+                                        }
+                                        <!-- Item Name and buttons -->
+                                        <input id="@($"txtName-{item.Id}")" type="text" class="form-control form-control-navbar w-50 d-none" value="@item.TodoItem" />
+                                        <!-- General tools such as edit or delete-->
+                                        <div class="tools">
+                                            <button id="@($"btnEdit-{item.Id}")" type="button" class="btn btn-warning btn-sm" onclick="Edit('@item.Id')" data-bs-title="Edit" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-edit"></i></button>
+                                            <button id="@($"btnDelete-{item.Id}")" type="button" class="btn btn-danger btn-sm" onclick="Delete('@item.Id')" data-bs-title="Delete" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-trash"></i></button>
+                                            <button id="@($"btnSave-{item.Id}")" type="button" class="btn btn-success btn-sm d-none" onclick="Save('@item.Id')" data-bs-title="Save" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-save"></i></button>
+                                            <button id="@($"btnCancel-{item.Id}")" type="button" class="btn btn-secondary btn-sm d-none" onclick="Cancel('@item.Id')" data-bs-title="Cancel" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </li>
+                                }
+                            }
+                            else{
+                                <p> Record(s) Not Found</p>
+                                
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    <script type="text/javascript">
+        function Add(ctrl) {
+            var txtName = $(ctrl).parent().prev('input[type=text]');
+            var name = $(txtName).val();
+            if (name != '') {
+                var btnHTML = $(ctrl).html();
+                $(ctrl).attr('disabled', true);
+                $(ctrl).html('<i class="fa fa-spinner fa-spin "></i> Please Wait');
+                $.get('?handler=Add', { name: name })
+                .done(function (data) {
+                    $(txtName).val('');
+                    $(ctrl).attr('disabled', false);
+                    $(ctrl).html(btnHTML);
+                    toastr.info(data, '', {
+                        onHidden: function() {
+                            window.location.reload();
+                        }
+                    })
+                });
+            }
+            else {
+                toastr.error("blank input");
+            }
+        }
+
+        function Edit(id) {
+            $('#spnName-' + id).removeClass('d-inline').addClass('d-none');
+            $('#btnEdit-' + id).removeClass('d-inline').addClass('d-none');
+            $('#btnDelete-' + id).removeClass('d-inline').addClass('d-none');
+            $('#txtName-' + id).removeClass('d-none').addClass('d-inline');
+            $('#btnSave-' + id).removeClass('d-none').addClass('d-inline');
+            $('#btnCancel-' + id).removeClass('d-none').addClass('d-inline');
+        }
+
+        function Cancel(id) {
+            $('#spnName-' + id).removeClass('d-none').addClass('d-inline');
+            $('#btnEdit-' + id).removeClass('d-none').addClass('d-inline');
+            $('#btnDelete-' + id).removeClass('d-none').addClass('d-inline');
+            $('#txtName-' + id).removeClass('d-inline').addClass('d-none');
+            $('#btnSave-' + id).removeClass('d-inline').addClass('d-none');
+            $('#btnCancel-' + id).removeClass('d-inline').addClass('d-none');
+        }
+
+        function Save(id) {
+            var editedName = $('#txtName-' + id).val();
+            if (editedName != '') {
+                $.get('?handler=Edit', { id: id, editedName: editedName })
+                    .done(function (data) {
+                        toastr.info(data, '', {
+                            onHidden: function () {
+                                window.location.reload();
+                            }
+                        })
+                    });
+            }
+            else{
+                toastr.error("Please Enter a  Name");
+            }
+        }
+
+        function Delete(id) {
+            debugger;
+            $.get('?handler=Detete', { id: id})
+                .done(function (data) {
+                    window.location.reload();
+                });
+        }
+
+    </script>
+}

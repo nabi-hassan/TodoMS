@@ -17,17 +17,17 @@ namespace Applicaton.Services
         public DataService(
             IUnitOfWork unitOfWork, 
             IMapper mapper, 
-            IRepository<TodoGroup> TodoGroupRepo,
-            IRepository<TodoList> TodoListRepo,
-            IRepository<Todo> TodoRepo
+            IRepository<TodoGroup> TodoGroupsRepo,
+            IRepository<TodoList> TodoListsRepo,
+            IRepository<Todo> TodosRepo
             )
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
 
-            TodoGroupsService = new TodoGroupsService(_unitOfWork, _mapper, TodoGroupRepo);
-            TodoListsService = new TodoListsService(_unitOfWork, _mapper, TodoListRepo);
-            TodosService = new TodosService(_unitOfWork, _mapper, TodoRepo);
+            TodoGroupsService = new TodoGroupsService(_unitOfWork, _mapper, TodoGroupsRepo);
+            TodoListsService = new TodoListsService(_unitOfWork, _mapper, TodoListsRepo);
+            TodosService = new TodosService(_unitOfWork, _mapper, TodosRepo);
         }
     }
 }

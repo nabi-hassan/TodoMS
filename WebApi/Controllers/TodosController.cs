@@ -55,7 +55,9 @@ namespace WebApi.Controllers
             if (!ModelState.IsValid)
             {
                 var errors = ModelState.GetModelStateErrors();
-                if (errors != null && errors.Count > 0 ) {
+
+                if (errors != null && errors.Count > 0 ) 
+                {
                     var msgBuilder = new StringBuilder();
                     foreach (var error in errors)
                     {
@@ -65,6 +67,7 @@ namespace WebApi.Controllers
                 }
             }
             var createdDto = await _dataService.TodosService.Create(modelDto);
+
             if (createdDto == null)
             {
                 return BadRequest(ApiResponseBuilder.GenerateBadRequest("Create Failed", "Some Error Occured"));

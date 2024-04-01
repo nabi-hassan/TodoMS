@@ -15,9 +15,9 @@ namespace Applicaton.ViewModels
         public string TodoItem { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime? DueDate { get; set; }
-        public DateTime ReminderDate { get; set; }
+        public DateTime? ReminderDate { get; set; }
         public string Repeat { get; set; }
-        public bool? Important { get; set; }
-        public bool? Completed { get; set; }
+        public bool Important { get; set; }
+        public bool Completed { get; set; }
     }
 }
