@@ -147,7 +147,6 @@ D:\Github\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTarge
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApi.props
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
-D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.csproj.CopyComplete
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.dll
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\refint\WebApi.dll
 D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.pdb
@@ -168,3 +167,17 @@ D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
 D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.MSSqlServer.dll
 D:\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.MSSqlServer.dll
+D:\Github\TodoMS\WebApi\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+D:\Github\TodoMS\WebApi\obj\Debug\net8.0\WebApi.csproj.Up2Date

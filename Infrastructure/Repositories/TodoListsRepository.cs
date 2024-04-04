@@ -15,5 +15,10 @@ namespace Infrastructure.Repositories
         {
             return _appDbContext.TodoLists.FirstOrDefaultAsync(x => x.ListName.ToLower() == model.ListName.ToLower());
         }
+
+        public Task<List<TodoList>> GetByGroupID(int? gid)
+        {
+            return _appDbContext.TodoLists.Where(x => x.TodoGroupId == gid).ToListAsync();
+        }
     }
 }

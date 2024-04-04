@@ -9554,19 +9554,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hassanab\\.nuget\\packages\\": {}
+    "C:\\Users\\syedn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TodoMS\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\Github\\TodoMS\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\TodoMS\\WebApp\\WebApp.csproj",
-      "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
-      "outputPath": "D:\\TodoMS\\WebApp\\obj\\",
+      "projectPath": "D:\\Github\\TodoMS\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\TodoMS\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9574,16 +9574,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.grapecity.com/nuget": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\TodoMS\\Applicaton\\Applicaton.csproj": {
-              "projectPath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj"
+            "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj": {
+              "projectPath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj"
             }
           }
         }
@@ -9655,17 +9653,11 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.grapecity.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    },
     {
       "code": "NU1903",
       "level": "Warning",
@@ -9687,10 +9679,10 @@
       ]
     },
     {
-      "code": "NU1904",
+      "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vh55-786g-wjwj",
+      "message": "Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh55-786g-wjwj",
       "libraryId": "System.Security.Cryptography.Xml",
       "targetGraphs": [
         "net8.0"

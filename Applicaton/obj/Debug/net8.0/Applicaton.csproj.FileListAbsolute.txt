@@ -23,9 +23,9 @@ D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.AssemblyInfoInputs.cache
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.AssemblyInfo.cs
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.CoreCompileInputs.cache
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.sourcelink.json
-D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.CopyComplete
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.dll
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\refint\Applicaton.dll
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.pdb
 D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\ref\Applicaton.dll
 D:\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.Up2Date
+D:\Github\TodoMS\Applicaton\obj\Debug\net8.0\Applicaton.csproj.Up2Date

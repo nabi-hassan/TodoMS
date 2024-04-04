@@ -202,5 +202,19 @@ namespace WebApi.Controllers
             return Ok(ApiResponseBuilder.GenerateOK(rowsAffected, "Ok", "Bulk Delete sucess"));
         }
 
+        // GET api/TodoLists/GetByGroupID/5
+        [HttpGet("{gid}")]
+        public async Task<IActionResult> GetByGroupID(int gid)
+        {
+            if (gid <= 0)
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Get Failed", "Input not valid"));
+
+            var modelDto = await _dataService.TodoListsService.GetByGroupID(gid);
+            if (modelDto == null)
+                return NotFound(ApiResponseBuilder.GenerateNotFound("Get Failed", "Record not found"));
+
+            return Ok(ApiResponseBuilder.GenerateOK(modelDto, "OK", $"{modelDto.Count} Record fetched"));
+        }
+
     }
 }

@@ -12,5 +12,6 @@ namespace Applicaton.Interfaces
     public interface ITodoListsService : IService<TodoList, TodoListDTO, TodoListVM>
     {
         Task<TodoListVM> GetDuplicate(TodoListDTO dto);
+        Task<List<TodoListVM>> GetByGroupID(int? gid);
     }
 }
