@@ -12,5 +12,6 @@ namespace Applicaton.Interfaces
     public interface ITodosService : IService<Todo, TodoDTO, TodoVM>
     {
         Task<TodoVM> GetDuplicate(TodoDTO dto);
+        Task<List<TodoVM>> GetByListID(int? lid);
     }
 }

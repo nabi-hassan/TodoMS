@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f788Ja3sR/YAkLsqon6aMToN8MKIrFUPPsMeWDD3bMjj4RvZSnEC6mAMHtWeBHyeaOdxj7uMgNjO6e4MPKLURQ==",
+  "dgSpecHash": "F9E2Bl4qBHS0TyYcEbyf3LLKJpbA2w/1t1pUC9+b9AwQmOb2kZwUmfPE6ysoeksSRAn3IGTwdwIkzjUXVcyH9Q==",
   "success": true,
-  "projectFilePath": "D:\\Github\\TodoMS\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\TodoMS\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

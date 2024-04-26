@@ -4470,19 +4470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\syedn\\.nuget\\packages\\": {}
+    "C:\\Users\\hassanab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\TodoMS\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\TodoMS\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "D:\\Github\\TodoMS\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\TodoMS\\WebApi\\obj\\",
+      "projectPath": "D:\\TodoMS\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+      "outputPath": "D:\\TodoMS\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4496,8 +4496,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Github\\TodoMS\\Infrastructure\\Infrastructure.csproj"
+            "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\TodoMS\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -4541,7 +4541,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

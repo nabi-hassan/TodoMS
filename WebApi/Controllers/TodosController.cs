@@ -205,5 +205,17 @@ namespace WebApi.Controllers
             return Ok(ApiResponseBuilder.GenerateOK(rowsAffected, "Ok", "Bulk Delete sucess"));
         }
 
+        // GET api/Todos/GetByListID/5
+        [HttpGet("{lid?}")]
+        public async Task<IActionResult> GetByListID([FromRoute] int? lid)
+        {
+            if (lid <= 0)
+                return BadRequest(ApiResponseBuilder.GenerateBadRequest("Get Failed", "Input not valid"));
+            var modelDto = await _dataService.TodosService.GetByListID(lid);
+            if (modelDto == null)
+                return NotFound(ApiResponseBuilder.GenerateNotFound("Get Failed", "Record(s) not found"));
+            return Ok(ApiResponseBuilder.GenerateOK(modelDto, "OK", $"{modelDto.Count} Record fetched"));
+        }
+
     }
 }

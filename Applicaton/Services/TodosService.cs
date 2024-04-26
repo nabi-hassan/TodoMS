@@ -16,6 +16,7 @@ namespace Applicaton.Services
             : base(unitOfWork, mapper, repository)
         {
         }
+
         public async Task<TodoVM> GetDuplicate(TodoDTO dto)
         {
             if (dto == null) return null;
@@ -24,6 +25,17 @@ namespace Applicaton.Services
             if (existingModel == null) return null;
             var vm = _mapper.Map<TodoVM>(existingModel);
             return vm;
+        }
+
+        public async Task<List<TodoVM>> GetByListID(int? lid)
+        {
+            if (lid <= 0) return null;
+
+            var models = await _unitOfWork.TodosRepository.GetByListID(lid);
+
+            if (models == null) return null;
+            var ModelVMs = _mapper.Map<List<TodoVM>>(models);
+            return ModelVMs;
         }
     }
 }
