@@ -9554,19 +9554,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\syedn\\.nuget\\packages\\": {}
+    "C:\\Users\\hassanab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\TodoMS\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\TodoMS\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\Github\\TodoMS\\WebApp\\WebApp.csproj",
-      "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\TodoMS\\WebApp\\obj\\",
+      "projectPath": "D:\\TodoMS\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\hassanab\\.nuget\\packages\\",
+      "outputPath": "D:\\TodoMS\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hassanab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9580,8 +9580,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj": {
-              "projectPath": "D:\\Github\\TodoMS\\Applicaton\\Applicaton.csproj"
+            "D:\\TodoMS\\Applicaton\\Applicaton.csproj": {
+              "projectPath": "D:\\TodoMS\\Applicaton\\Applicaton.csproj"
             }
           }
         }
@@ -9653,7 +9653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -9664,16 +9664,6 @@
       "warningLevel": 1,
       "message": "Package 'System.Net.Http' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7jgj-8wvc-jh57",
       "libraryId": "System.Net.Http",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2m65-m22p-9wjw",
-      "libraryId": "System.Security.Cryptography.Xml",
       "targetGraphs": [
         "net8.0"
       ]

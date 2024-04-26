@@ -44,6 +44,7 @@
                                             <button id="@($"btnDelete-{item.Id}")" type="button" class="btn btn-danger btn-sm" onclick="Delete('@item.Id')" data-bs-title="Delete" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-trash"></i></button>
                                             <button id="@($"btnSave-{item.Id}")" type="button" class="btn btn-success btn-sm d-none" onclick="Save('@item.Id')" data-bs-title="Save" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-save"></i></button>
                                             <button id="@($"btnCancel-{item.Id}")" type="button" class="btn btn-secondary btn-sm d-none" onclick="Cancel('@item.Id')" data-bs-title="Cancel" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-times"></i></button>
+                                            <a asp-page="/TodoLists" asp-route-gid="@item.Id" class="btn btn-primary btn-sm" title="Lists"><i class="fas fa-list"></i></a>
                                         </div>
                                     </li>
                                 }

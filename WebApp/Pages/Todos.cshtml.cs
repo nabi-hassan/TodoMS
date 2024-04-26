@@ -19,12 +19,13 @@ namespace WebApp.Pages
             _dataService = dataService;
             _toastr = toastr;
         }
+        [FromRoute] public int? lid { get; set; }
 
         public List<TodoVM> modelVMs { get; set; }
 
         public async Task<IActionResult> OnGet()
         {
-            var apiResponse = await _dataService.Todos.Get();
+            var apiResponse = await _dataService.Todos.GetByListID(lid);
             var message = "Could'nt get response from API";
             if (apiResponse != null)
             {
@@ -55,6 +56,10 @@ namespace WebApp.Pages
                 TodoItem = name,
                 CreatedOn = DateTime.Now,
             };
+            if (lid.HasValue)
+            {
+                modelDto.TodoListId = lid.Value;
+            }
             var apiResponse = await _dataService.Todos.Create(modelDto);
             var message = "Could'nt get response from API";
             if (apiResponse != null)
@@ -81,6 +86,10 @@ namespace WebApp.Pages
                 TodoItem = editedName,
                 CreatedOn = DateTime.Now,
             };
+            if (lid.HasValue)
+            {
+                modelDto.TodoListId = lid.Value;
+            }
             var apiResponse = await _dataService.Todos.Edit(id, modelDto);
             var message = "Could'nt get response from API";
             if (apiResponse != null)

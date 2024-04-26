@@ -40,6 +40,17 @@ namespace WebApp.Services
             return authHeaderAdded == true ? await GetResponse(path, id) : ApiResponseBuilder.GenerateUnauthorized("Unauthorized", "Unauthorized Access");
         }
 
+        public async Task<ApiResponse> Get(string path, bool addAuthHeader, int? id)
+        {
+            if (addAuthHeader == false)
+            {
+                return await GetResponse(path, id);
+            }
+
+            bool authHeaderAdded = await AddAuthHeader();
+            return authHeaderAdded == true ? await GetResponse(path, id) : ApiResponseBuilder.GenerateUnauthorized("Unauthorized", "Unauthorized Access");
+        }
+
         public async Task<ApiResponse> Post(string path, bool addAuthHeader, object model)
         {
             if (addAuthHeader == false)
@@ -85,6 +96,12 @@ namespace WebApp.Services
         }
 
         private async Task<ApiResponse> GetResponse(string path, int id)
+        {
+            var httpResponseMessage = await _httpClient.GetAsync($"{path}/{id}");
+            return await httpResponseMessage.Content.ReadFromJsonAsync<ApiResponse>();
+        }
+
+        private async Task<ApiResponse> GetResponse(string path, int? id)
         {
             var httpResponseMessage = await _httpClient.GetAsync($"{path}/{id}");
             return await httpResponseMessage.Content.ReadFromJsonAsync<ApiResponse>();

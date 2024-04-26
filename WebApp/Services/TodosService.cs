@@ -1,4 +1,5 @@
 ﻿using Applicaton.Dtos;
+using Applicaton.Helpers;
 using WebApp.ServiceInterfaces;
 
 namespace WebApp.Services
@@ -13,5 +14,9 @@ namespace WebApp.Services
             _httpClientService = httpClientService;
         }
 
+        public async Task<ApiResponse> GetByListID(int? lid)
+        {
+            return await _httpClientService.Get($"{controllerName}/GetByListID", false, lid);
+        }
     }
 }
